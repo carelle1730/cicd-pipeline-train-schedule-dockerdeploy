@@ -21,7 +21,7 @@ pipeline {
                 }
             }
         }
-        stage('Push Docker Image') {
+     stage('Push Docker Image') {
             when {
                 branch 'master'
             }
@@ -34,7 +34,7 @@ pipeline {
                 }
             }
         }
-        stage('DeployToProduction') {
+     stage('DeployToProduction') {
             when {
                 branch 'master'
             }
@@ -55,3 +55,5 @@ pipeline {
                 }
             }
         }
+    }
+}
